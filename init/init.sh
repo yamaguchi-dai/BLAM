@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-composer create-project --prefer-dist laravel/laravel /vagrant/LaraApp/ "5.5.*"
+/usr/local/bin/composer create-project --prefer-dist laravel/laravel /vagrant/LaraApp/ "5.5.*"
 sudo su - postgres -c "psql -c \"CREATE ROLE vagrant LOGIN PASSWORD 'vagrant'\""
 sudo su - postgres -c "psql -c \"create database vagrant owner vagrant\""
 #httpdの設定変更
