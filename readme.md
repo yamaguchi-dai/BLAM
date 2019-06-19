@@ -19,7 +19,8 @@ vagrant up
 configを変更
 
 `
-sudo sh /vagrant/init/init.sh 
+
+
 `
 
 (任意)Laravel-adminをインストール
