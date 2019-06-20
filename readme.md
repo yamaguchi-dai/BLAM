@@ -27,3 +27,6 @@ sudo sh /vagrant/init/init.sh
 `
 sudo sh /vagrant/init/admin.init.sh 
 `
+
+TODO
+日本語化自動化
