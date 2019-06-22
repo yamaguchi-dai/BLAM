@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
 
-  config.vm.box = "bento/centos-7.2"
+  config.vm.box = "centos/7"
   config.vm.network "private_network", ip: "192.168.33.20"
   config.vm.network :forwarded_port, host: 8888, guest: 80
 
