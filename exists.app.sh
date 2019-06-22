@@ -1,5 +1,3 @@
-[vagrant@localhost vagrant]$ less exists.app.sh 
-
 #!/usr/bin/env bash
 
 sudo su - postgres -c "psql -c \"CREATE ROLE vagrant LOGIN PASSWORD 'vagrant'\""
@@ -24,9 +22,8 @@ sudo systemctl restart postgresql-10
 
 cp /vagrant/LaraApp/.env.example /vagrant/LaraApp/.env
 
-php /vagrant/LaraApp/artisan key:generate
-
 cd /vagrant/LaraApp;/usr/local/bin/composer update
+php /vagrant/LaraApp/artisan key:generate
 
 #Laravelの設定
 sed -i -E "s/DB_CONNECTION=mysql/DB_CONNECTION=pgsql/" /vagrant/LaraApp/.env
