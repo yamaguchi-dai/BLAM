@@ -37,6 +37,7 @@ Vagrant.configure("2") do |config|
    config.vm.provision "shell", run:"always",inline: <<-SHELL
         systemctl start httpd
         systemctl start postgresql-10
+	setenforce 0
    SHELL
 
 end
