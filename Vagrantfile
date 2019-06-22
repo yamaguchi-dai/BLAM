@@ -6,6 +6,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
   config.vm.network "private_network", ip: "192.168.33.20"
   config.vm.network :forwarded_port, host: 8888, guest: 80
+  config.vm.synced_folder ".", "/vagrant",type:"virtualbox"
 
    config.vm.provision "shell", inline: <<-SHELL
     echo start ins upd
