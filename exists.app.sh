@@ -22,7 +22,7 @@ sudo systemctl restart postgresql-10
 
 cp /vagrant/LaraApp/.env.example /vagrant/LaraApp/.env
 
-cd /vagrant/LaraApp;/usr/local/bin/composer update
+cd /vagrant/LaraApp;/usr/local/bin/composer install
 php /vagrant/LaraApp/artisan key:generate
 
 #Laravelの設定
