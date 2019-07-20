@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-#httpd‚Ìİ’è•ÏX
-#backƒAƒbƒvì¬
+#httpdï¿½Ìİ’ï¿½ÏX
+#backï¿½Aï¿½bï¿½vï¿½ì¬
 sudo cp /etc/httpd/conf/httpd.conf /vagrant/init/conf/httpd.conf.org
-#alias–³Œø‰»iã‘‚«Šm”F‚ğ–³Œø‰») İ’èƒtƒ@ƒCƒ‹ã‘‚«
+#aliasï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½iï¿½ã‘ï¿½ï¿½ï¿½mï¿½Fï¿½ğ–³Œï¿½ï¿½ï¿½) ï¿½İ’ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½ã‘ï¿½ï¿½
 sudo \cp -f /vagrant/init/conf/httpd.conf /etc/httpd/conf/httpd.conf
 
 #postgresql
